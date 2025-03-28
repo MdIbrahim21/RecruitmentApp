@@ -23,14 +23,17 @@ function CustomPreviewScreen({
   // const ValidFrom = data.ValidFrom;
 
   const isEmptyData =
-    !data ||
-    (!data.RolePurpose &&
-      !data.JobDescription &&
-      !data.RoleSpeKnowledgeoption?.length &&
-      !data.MinQualificationOption?.length &&
-      !data.TechnicalSkillsOption?.length &&
-      !data.TotalExperience &&
-      !data.ExperienceinMiningIndustry);
+  !data ||
+  !(
+    data.RolePurpose &&
+    data.JobDescription &&
+    data.RoleSpeKnowledgeoption?.length &&
+    data.MinQualificationOption?.length &&
+    data.TechnicalSkillsOption?.length &&
+    data.TotalExperience &&
+    data.ExperienceinMiningIndustry
+  );
+
 
   return (
     <>
