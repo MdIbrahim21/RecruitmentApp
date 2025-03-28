@@ -33,8 +33,6 @@ function CustomPreviewScreen({
     data.TotalExperience &&
     data.ExperienceinMiningIndustry
   );
-
-
   return (
     <>
       <div className="ms-Grid-row">
